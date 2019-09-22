@@ -1,0 +1,84 @@
+/* General Style */
+
+body {
+margin:0;
+padding:0;
+background-color:#72C7EB;
+color: black;
+font-family: Arial, Helvetica, sans-serif;
+font-size:11px;
+
+background:#2AABE4 url(../../images/bg.jpg);
+}
+h1 { font-size: 18px; color:#00356E }
+h2 { font-size: 16px }
+p { font-size: 1em }
+a { color:#3F4289; text-decoration:none;font-weight:bold; }
+a:hover { color:#2B5EAF; text-decoration:underline }
+a:visited { color:#3F4289; text-decoration:none }
+a:visited:hover { color:#2B5EAF; text-decoration:underline }
+#footer-links a { margin:0 8px; }
+#footer a, #footer a:visited {
+color:#fff;
+text-decoration:none
+}
+#footer a:hover, #footer a:visited:hover {
+color:#FBE900;
+text-decoration:underline
+}
+
+
+.clr { clear: both; overflow:hidden; height:0; }
+.align-right { text-align:right; }
+.wide100 { width:100%; }
+.wide80 { width:80%; }
+.wide75 { width:75%; }
+.wide70 { width:70%; }
+.wide65 { width:65%; }
+.wide60 { width:60%; }
+.default-height { height:440px }
+
+a.fake-link, a.fake-link:hover { cursor:default; text-decoration:none; }
+
+#system-message { background-color: #E7E7E7; border-top: 3px solid #CCCCCC; border-bottom: 3px solid #CCCCCC; margin-bottom: 10px; padding: 0;}
+#system-message .info { background: #E7E7E7 url(../images/notice-info.png) 10px center no-repeat; padding: 10px;}
+#system-message .alert { background: #E7E7E7 url(../images/notice-alert.png) 10px center no-repeat; padding: 10px;}
+#system-message .message { color: #004080; font-weight: bold; text-indent: 36px; }
+
+/*Grid*/
+.ico-action { margin-right:5px }
+
+/* Lightbox - Overide Style */
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext { width: 0 !important }
+
+/* Superfish Menu Overwrides */
+.sf-menu li.std-width a { padding-left: 2em; padding-right: 2em; }
+.sf-menu li li a { width:10.3em; }
+.sf-menu li ul { width:12.5em; z-index:10;}
+.sf-menu li.nav-filler a, .sf-menu li.nav-filler a:hover { text-decoration:none; background-color:#316AC5; cursor:default; }
+.sf-menu li.nav-filler a { width:480px; }
+* html .sf-menu li.nav-filler a { width:480px; }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.sf-menu li.nav-filler a { width:480px; }
+}
+
+@media all and (-webkit-min-device-pixel-ratio:980), not all and (-webkit-min-device-pixel-ratio:0)
+{
+	head~body .sf-menu li.nav-filler a { width:470px; }
+}
+
+.dashboard-tr{
+	background-color:#D2E6F5;
+	padding:2px;
+	margin:2px;
+}
+.dashboard-tr1{
+	background-color:#DDECF7;
+	padding:2px;
+	margin:2px;
+}
+.dashboard-total{
+	background-color:#D2E6F5;
+	padding:2px;
+	margin:2px;
+}

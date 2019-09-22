@@ -1,0 +1,181 @@
+/* Report Styles */
+
+body {
+	margin: 1em;
+	padding: 0;
+	background: #fff;
+	padding-bottom: 1px;
+	font-size: 11px;
+}
+
+body, td, th { font-family: Arial, Helvetica, sans-serif; font-size: 11px; }
+
+.clr { clear: both; overflow: hidden; }
+
+a, img { padding: 0; margin: 0; }
+img { border: 0 none; }
+
+form { margin: 0; padding: 0; }
+a:link    { color: #0074FF; text-decoration: none; }
+a:visited { color: #0074FF; text-decoration: none; }
+a:hover   { text-decoration: underline; }
+h1 { font-size: 1.5em; margin:0 0 0.4em 0; }
+h2 { font-size: 1.2em; margin:0 0 0.4em 0; }
+input, select { font-size: 10px;  border: 1px solid silver; }
+textarea      { font-size: 11px;  border: 1px solid silver; font-family:Arial, Helvetica, sans-serif; }
+button        { font-size: 10px;  }
+
+input.disabled { background-color: #F0F0F0; }
+
+input.button  { cursor: pointer; background-color: #343235; color: #FFFFFF; border: 1px solid #343235; }
+
+input:focus,
+select:focus,
+textarea:focus { background-color: #ffd }
+
+#wrap {
+	max-width:50em;
+	width:50em;
+	margin:2em auto;
+}
+* html #wrap {width:50em}
+
+table.record-list {
+	margin-top: 0.5em;
+	/*border-spacing: 1px;*/
+	background-color: #999;
+	color: #666;
+	border: #666 solid 1px;
+	border-collapse: collapse;	
+}
+
+table.record-list td,
+table.record-list th { padding: 4px; }
+
+table.record-list thead th {
+	text-align: left;
+	background: #f0f0f0;
+	color: #666;
+	border: 1px solid #666;
+}
+
+table.record-list thead a:hover { text-decoration: none; }
+
+table.record-list thead th img { vertical-align: middle; }
+table.record-list tbody th { font-weight: bold; }
+
+table.record-list tbody tr { background-color: #fff;  text-align: left; }
+table.record-list tbody tr.row1 { background: #f9f9f9; border-top: 1px solid #fff; }
+
+table.record-list tbody tr.row0:hover td,
+table.record-list tbody tr.row1:hover td { background-color: #ffd ; }
+
+table.record-list tbody tr td  { height: 20px; background: #fff; border: 1px solid #666; padding: 3px; }
+table.record-list tbody tr.row1 td { background: #f9f9f9; border-top: 1px solid #fff; }
+
+table.record-list tfoot tr { text-align: left;  color: #333; }
+table.record-list tfoot td,
+table.record-list tfoot th { background-color: #f3f3f3; border-top: 1px solid #666; text-align: left; }
+
+table.record-list td.order { text-align: center; white-space: nowrap; }
+table.record-list td.order span { float: left; display: block; width: 20px; text-align: center; }
+
+table.record-list .paginationB { display:table; padding:0;  margin:0 auto; }
+
+table.record-list td.sub-total { text-align: right; font-weight: bold; font-size: 1em; }
+table.record-list td.grand-total { text-align: right; font-weight: bold; font-size: 1.2em; background-color: #CCCCCC; color: #333333; }
+
+div.pagination-display { 
+	float: left;
+	display: inline;
+	padding: 4px 0 0 4px;
+}
+div.pagination-pagenum { 
+	float: left;
+	display: inline;
+	width: 70%;
+}
+
+.paginationB div.limit {
+	height: 22px;
+	line-height: 22px;
+	margin: 0 10px;
+	padding: 4px 0 4px 0;
+}
+
+.container {clear:both; text-decoration:none;}
+* html .container {display:inline-block;}
+
+.figure-align { text-align: right !important; }
+.date-align { text-align: center !important; }
+
+
+/* Pagination Style */
+div#pagination {
+/*   
+	height:50px;
+    margin-top:3px;
+*/ 
+}
+div#pagination .count {
+     float:left;
+     padding:5px;
+     }
+div#pagination .pages {
+     float:right; padding:5px;
+     }
+
+div#paginationTop{background: url(../images/oPagination_bg_top.png) bottom center no-repeat; height:40px; margin-bottom:3px;}
+div#paginationTop .count { float:left; padding:5px;}
+div#paginationTop .pages { float:right; padding:5px;}
+
+div.pagination { padding: 3px; margin: 3px; }
+div.pagination a {
+     padding: 2px 5px 2px 5px;
+     margin: 2px;
+     border: 1px solid #999;
+     text-decoration: none; /* no underline */
+     color: #666;
+}
+div.pagination a:hover, div.pagination a:active {
+     border: 1px solid #666;
+     color: #000;
+}
+div.pagination span.current {
+     padding: 2px 5px 2px 5px;
+     margin: 2px;
+     border: 1px solid #666;
+     font-weight: bold;
+     background-color: #666;
+     color: #FFF;
+     }
+div.pagination span.disabled {
+     padding: 2px 5px 2px 5px;
+     margin: 2px;
+     border: 1px solid #eee;
+     color: #ddd;
+}
+.bold14 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+.rederror {
+	color: red;
+}
+
+#print-link { font-weight: bold; float: right; }
+.page-stat { display: none; }	
+
+.float-left { float: left; display: inline; }
+.float-right { float: right; display: inline; }
+.align-right { text-align: right; }
+.align-center { text-align: center; }
+.box-all { border:#CCCCCC solid 1px; padding: 0.5em; }
+
+@media print {
+	.pagination-display { display: none; }
+	.pagination { display: none; }
+	.page-stat { float: left; display: inline; padding:5px; }
+	#print-link { display: none; }
+}

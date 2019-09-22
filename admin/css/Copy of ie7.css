@@ -1,0 +1,44 @@
+
+#container { 
+width: 920px;
+margin: 0 auto;
+background-color:white;
+border: white solid 0px;
+border-top:0;
+margin-top:17px;
+}
+#header { height:102px;}
+#logo-area { float:left; display:inline;  padding:0 10px 0px 0px; font-weight:bold; color:#000000;}
+#logo-area .logo { vertical-align:middle; }
+#logged-user { float:right; display:inline; color:white;}
+#navigation { padding:0px; font-size:11px; width:920px;background-color:#75AD01;}
+#content { padding:0 20px; color:#000; background-color:#fff; }
+#content .content-main { margin:0 auto; padding:10px 0; }
+#footer { clear: both; height:40px; text-align:center; padding:8px 0 10px 0;background-color:#000000; color:white;}
+#credit { padding: 6px 0 }
+#credit a:hover{color:#FBE900;}
+#content-home { }
+/* Flexigrid - Overide Style */
+table#photos tbody td { vertical-align:middle !important; }
+
+
+#menu-content-separator{margin-top:0px;}
+.sf-menu li.nav-filler a { width:1px; }
+* html .sf-menu li.nav-filler a { width:1px; }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.sf-menu li.nav-filler a { width:1px; }
+}
+
+@media all and (-webkit-min-device-pixel-ratio:880), not all and (-webkit-min-device-pixel-ratio:0)
+{
+	head~body .sf-menu li.nav-filler a { width:1px; }
+}
+#logged-user .administrationtext {
+color:white;
+float:left;
+font-size:26px;
+align:right;
+text-align:right;
+margin-left:70px;
+}
+.form-search{margin-top:0px;margin-bottom:10px;float:right;}

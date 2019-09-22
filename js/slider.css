@@ -1,0 +1,323 @@
+/*
+	T O O L T I P
+	--------------
+*/
+#tooltip {
+	position: absolute;
+	z-index: 3000;
+	border: 0;
+	background-color: #fff;
+	padding: 5px;
+	opacity: 0.85;
+	font-family:arial;
+}
+#tooltip h3, #tooltip div { 
+	margin: 0; font-size: 11px; 
+	font-family:arial;
+}
+
+/* A R C S - S L I D E R
+  ------------------------*/
+
+#arcs {
+	width: 100% !important;
+}
+
+.arc {
+	width: 220px;
+	height: 360px;
+	margin: 0px 20px 20px 0px;
+	float: left;
+	overflow: hidden;
+}
+
+.arc .content .top {
+	height: 145px;
+	background-repeat: no-repeat;
+	background-color: #000;
+}
+
+.arc .content .top img.img-overlay {
+	display: none;
+}
+
+.arc .content .bottom {
+	color: #fff;
+	background-color: #000;
+	width: 220px;
+	height: 25px;
+}
+
+.arc .popup {
+	padding: 0px 0 20px 0px;
+	display: block;
+}
+
+.arc .popup p {
+	font-size: 8pt;
+	padding: 0 0 5px 0;	
+}
+
+.arc .popup p.desc, .arc .popup p.urls {
+	font-weight: bold;	
+}
+
+
+/* S T A T I C  C O N T E N T - S L I D E R 
+  -----------------------------------------*/
+
+#staticcontent {
+	width: 100% !important;
+}
+
+.colspan1, .colspan2, .colspan3 {
+	width: 100%;
+	margin: 0px 0px 20px 0px;
+	float: none;
+}
+
+#staticcontent h2 {
+	font-size: 12pt;
+	padding-bottom: 10px;
+}
+#staticcontent h2.title-spacer {
+	display: none;
+}
+#staticcontent p {
+	font-size: 11pt;
+	padding-bottom: 10px;
+}
+
+#staticcontent p.important {
+	font-weight: bold;
+}
+
+#staticcontent div.dl { 
+	display:none 
+}
+
+
+/* G A L L E R Y - S L I D E R
+  ---------------------------- */
+
+#gallery {
+	width: 100% !important;
+}
+
+.gallery-item {
+	width: 320px;
+	margin: 0px 5px 5px 0px;
+	float: left;
+}
+
+
+
+/* A G E N D A - S L I D E R
+   ------------------------- */
+
+
+#agenda{
+	width: 100% !important;
+}
+
+.agenda-event {
+	width: 200px;
+	height: 360px;
+	margin: 0px 20px 20px 0px;
+	float: left;
+	border-left: 1px solid #000;
+	border-top: 1px solid #000;
+	overflow: hidden;
+}
+
+.agenda-event .bar {  
+	font-weight: bold;
+	padding: 5px 0 5px 5px;
+	line-height: 13pt;
+}
+
+.agenda-event p {
+	padding: 5px 5px 0 5px;
+}
+
+.agenda-event a {
+	padding: 0 1px 0 1px;
+}
+
+.agenda-event .top {
+	font-weight: bold;
+}
+
+.agenda-event h1 {
+	padding: 10px 5px 0 5px;
+	font-size: 16pt;
+}
+.agenda-event h2 {
+	padding: 7px 0 5px 5px;
+	font-size: 14pt;
+}
+.agenda-event h3 {
+	padding: 5px 5px 0 5px;
+	font-size: 11pt;
+}
+
+.agenda-event .bodytext {
+	font-size: 9pt;
+}
+
+.agenda-event .footer {
+	font-weight: bold;
+}
+
+/*
+	S L I D E R  G E N E R A L
+	--------------------------
+*/
+
+#sliderNavLeft, #sliderNavRight, #sliderNavLeftEmpty {
+	display: block;
+	padding: 0px 0px 0px 0px;
+	margin: 40px 0 0 0;
+	width: 40px;
+	overflow:hidden;
+}
+
+
+#sliderNavLeft {
+	float: left;
+	text-align: right;
+	margin-right: 20px;
+	height: 120px;
+	background-repeat: no-repeat;
+	background-image: url('arrow_left.png');
+	background-position: right top;
+}
+
+#sliderNavRight {
+	float: right;
+	margin-left: 20px;
+	height: 120px;
+	background-repeat: no-repeat;
+	background-image: url('arrow_right.png');
+	background-position: left top;
+}
+
+#sliderNavLeftEmpty {
+	float: left;
+	text-align: right;
+	margin-right: 20px;
+	height: 120px;
+}
+
+#slider {
+	height: 250px;
+	overflow: hidden;
+	width:650px;
+	border:0px solid red;
+}
+
+#slider .first {
+	margin-left: 0px;
+}
+
+#slider .last {
+	margin-right: 0px;
+}
+
+
+/*
+	  A R C S - S L I D E R
+	------------------------
+*/
+
+#arcs {
+	/* Width is set inline programmatically */
+}
+
+.arc {
+	width: 220px;
+	margin: 20px 0px 20px 20px;
+	float: left;
+	z-index: -1;
+}
+
+.arc .content {
+}
+
+.arc .content .top {
+	height: 145px;
+	background-repeat: no-repeat;
+	background-color: #000;
+}
+
+.arc .content .top img.img-overlay-slide {
+	display: none;
+}
+
+.arc .content .bottom {
+	color: #fff;
+	background-color: #000;
+	width: 220px;
+	height: 25px;
+}
+
+.arc .popup {
+	padding: 0px 0 20px 0px;
+	display: none;
+}
+
+.arc .popup p {
+	padding-top: 10px;	
+}
+
+.arc .popup p.desc, .arc .popup p.urls {
+	font-weight: bold;	
+}
+
+/*
+	S T A T I C  C O N T E N T - S L I D E R 
+	-----------------------------------------
+*/
+
+#staticcontent {
+	/* Width is set inline programmatically */
+}
+
+.colspan1, .colspan2, .colspan3 {
+	width: 300px;
+	margin: 20px 0px 20px 20px;
+	float: left;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.colspan2 {
+	width: 620px;
+	overflow: hidden;
+}
+
+.colspan3 {
+	width: 940px;
+	overflow: hidden;
+}
+
+#staticcontent h2 {
+	font-size: 11px;
+	line-height: 12px;
+	padding-bottom: 15px;
+}
+
+#staticcontent p {
+	font-size: 11px;
+	line-height: 12px;
+	padding-bottom: 15px;
+}
+
+#staticcontent p.important {
+	font-weight: bold;
+}
+
+#staticcontent div.dl { float: left; padding-right: 5px; }
+
+#staticcontent div.dl img { padding-right: 3px; vertical-align: bottom; }
+
